@@ -7,7 +7,7 @@ In the networks project, completed with a partner, we developed a multi-user cha
 ## Home Page on Desktop and Mobile Version
 
 <div>
-  <img src="https://github.com/SajedHamdan09/Networks-Multi-User-Chat-Application/blob/main/UI/UI_1.jpg" width="300" height="auto"/>
+  <img src="https://github.com/SajedHamdan09/Networks-Multi-User-Chat-Application/blob/main/UI/UI_1.jpg" width="300" height="350"/>
   <img src="https://github.com/SajedHamdan09/Networks-Multi-User-Chat-Application/blob/main/UI/mb_1.jpeg" width="200" /> 
 </div>
 
