@@ -13,7 +13,7 @@ In the networks project, completed with a partner, we developed a multi-user cha
 
 
 
-## Laptop user creates a chat, mobile user joins that room through the room code
+## Laptop user creates a chat room, mobile user joins that room through the room code
 
 <div>
   <img src="https://github.com/SajedHamdan09/Networks-Multi-User-Chat-Application/blob/main/UI/UI_2.png" width="680" height="447" />
