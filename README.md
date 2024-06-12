@@ -22,7 +22,7 @@ In the networks project, completed with a partner, we developed a multi-user cha
 
 
 
-## Interface after user joins chat room
+## Interface on mobile after mobile user joins the chat room
 
 <div>
   <img src="https://github.com/SajedHamdan09/Networks-Multi-User-Chat-Application/blob/main/UI/mb_3.jpeg" width="200" /> 
@@ -39,7 +39,7 @@ In the networks project, completed with a partner, we developed a multi-user cha
 
 
 
-## After th emobile user leaves the room, laptop user and other users get a message (user left the chat)
+## After the mobile user leaves the room, all users get a message showing (user left the chat)
 <div>
   <img src="https://github.com/SajedHamdan09/Networks-Multi-User-Chat-Application/blob/main/UI/UI_4.png" width="680" height="447" />
 </div>
