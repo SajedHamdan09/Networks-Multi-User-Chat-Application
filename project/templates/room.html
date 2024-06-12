@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat Application</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
+    integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/chat_styles.css') }}">
+</head>
+
+<body>
+<div id="room-container">
+  <h1 id="home-header">Chat Application</h1>
+  <div id="room-description">
+    <h2 id="room-code-display">Chat Room Code: <span>{{room}}</span></h2>
+    <a href="/" id="leave-chat-btn">Leave the Chat</a>
+  </div>
+
+  <div id="chat-room-widget">
+    <div id="msgs-container">
+      <ul id="messages"></ul>
+    </div>
+
+    <div id="message-box">
+      <input type="text" placeholder="Enter your message" id="message-input" name="message" />
+      <button type="submit" id="send-btn" onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+    var socketio = io();
+  
+    socketio.on("message", function (message) {
+      createChatItem(message.message, message.sender);
+    });
+  
+    function createChatItem(message, sender) {
+      var messages = document.getElementById("messages");
+  
+      if (sender === "") {
+        content = `
+          <p class="member-activity">${message}</p>
+        `;
+      } else {
+        // Decode the Base64 encoded message
+        var decodedMessage = atob(message);
+        // Message from the user
+        var senderIsUser = "{{user}}" === sender;
+        // Create message item with decoded message
+        var content = `
+          <li class="message-item ${senderIsUser ? 'self-message-item' : 'peer-message-item'}">
+            <p>${decodedMessage}</p>
+            <small class="${senderIsUser ? 'muted-text' : 'muted-text-white'}">${sender}, ${new Date().toLocaleString()}</small>
+          </li>
+        `;
+      }
+  
+      messages.innerHTML += content;
+    }
+  
+    function sendMessage() {
+      var msgInput = document.getElementById("message-input");
+      if (msgInput.value === "") return;
+  
+      var msg = msgInput.value;
+      socketio.emit("message", { message: btoa(msg) }); // Encode message to Base64 before sending
+      msgInput.value = "";
+    }
+  
+    // Add an event listener for the 'Enter' key press
+    document.getElementById("message-input").addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault(); // Prevent the default action
+        sendMessage();
+      }
+    });
+  </script>
+  
+  
+ 
+
+
+
+{% block content %}
+  {% for message in messages %}
+    <script type="text/javascript">
+      createChatItem("{{message.message}}", "{{message.sender}}");
+    </script>
+  {% endfor %}
+{% endblock %}
+</body>
+</html>

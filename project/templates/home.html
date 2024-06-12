@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Application</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
+      integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/home_styles.css') }}">
+  </head>
+
+  <body>
+    <div id="home-container">
+      <h1>Chat App - Network's Project</h1>
+
+      {% if error %}
+      <p id="error" style="color: red;">{{error}}</p>
+      {% endif %}
+
+      <form method="POST" id="home-screen">
+        <div id="name-input">
+          <label for="name">Username</label>
+          <input type="text" id="name" name="name" placeholder="Enter name"/>
+        </div>
+        
+        <hr />
+
+        <div id="code-input">
+          <h3>Join a Chat?</h3>
+
+          <label for="code">Chat code</label>
+          <input type="text" id="code" name="code" placeholder="Enter code" value="{{code}}" />
+          <button type="submit" id="join" name="join">Join</button>
+        </div>
+
+        <h2>Or</h2>
+
+        <h3>Create a Chat?</h3>
+        <button type="submit" id="create" name="create">Create Chat</button>
+      </form>
+    </div>
+  </body>
+
+</html>
+
+
