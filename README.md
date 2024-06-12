@@ -1,2 +1,2 @@
 # Networks-Multi-User-Chat-Application
-With a partner, developed a multi-user chat app in Python. Utilized asyncio, Scapy, and socket programming for robust message exchange. Implemented server, client, packet manipulation, and explored channel encoding. Aims at reliability and decision-making exploration.
+In the networks project, completed with a partner, we developed a multi-user chat application in Python. Using asyncio, Scapy, and socket programming, we created a robust platform for users to exchange messages. Our work included server and client implementations, packet manipulation with Scapy, and exploring channel encoding techniques. The project aimed to provide a reliable chat application while exploring decision-making techniques' applicability.
