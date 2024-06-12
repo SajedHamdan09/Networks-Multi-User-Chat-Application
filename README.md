@@ -7,7 +7,7 @@ In the networks project, completed with a partner, we developed a multi-user cha
 ## Home Page on Desktop and Mobile Version
 
 <div>
-  <img src="https://github.com/SajedHamdan09/Networks-Multi-User-Chat-Application/blob/main/UI/UI_1.jpg" />
+  <img src="https://github.com/SajedHamdan09/Networks-Multi-User-Chat-Application/blob/main/UI/UI_1.jpg" width="500"/>
   <img src="https://github.com/SajedHamdan09/Networks-Multi-User-Chat-Application/blob/main/UI/mb_1.jpeg" width="200" /> 
 </div>
 
@@ -16,7 +16,7 @@ In the networks project, completed with a partner, we developed a multi-user cha
 ## Laptop user creates a chat, mobile user joins that room through the room code
 
 <div>
-  <img src="https://github.com/SajedHamdan09/Networks-Multi-User-Chat-Application/blob/main/UI/UI_2.jpg" width="200" />
+  <img src="https://github.com/SajedHamdan09/Networks-Multi-User-Chat-Application/blob/main/UI/UI_2.png" width="200" />
   <img src="https://github.com/SajedHamdan09/Networks-Multi-User-Chat-Application/blob/main/UI/mb_2.jpeg" width="200" /> 
 </div>
 
@@ -33,7 +33,7 @@ In the networks project, completed with a partner, we developed a multi-user cha
 ## Both the Laptop and Mobile users chat throught the application, as you can see on the interface
 
 <div>
-  <img src="https://github.com/SajedHamdan09/Networks-Multi-User-Chat-Application/blob/main/UI/UI_3.jpg" width="200" />
+  <img src="https://github.com/SajedHamdan09/Networks-Multi-User-Chat-Application/blob/main/UI/UI_3.png" width="200" />
   <img src="https://github.com/SajedHamdan09/Networks-Multi-User-Chat-Application/blob/main/UI/mb_4.jpeg" width="200" /> 
 </div>
 
@@ -41,5 +41,5 @@ In the networks project, completed with a partner, we developed a multi-user cha
 
 ## After th emobile user leaves the room, laptop user and other users get a message (user left the chat)
 <div>
-  <img src="https://github.com/SajedHamdan09/Networks-Multi-User-Chat-Application/blob/main/UI/UI_4.jpg" width="200" />
+  <img src="https://github.com/SajedHamdan09/Networks-Multi-User-Chat-Application/blob/main/UI/UI_4.png" width="200" />
 </div>
